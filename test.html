@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="smart">smart btn</button>
+
+    <script>
+        // mouse = {
+        //     name: 'Chuot',
+        //     sayHi: function() {
+        //         alert('hi, my name is: ' + this.name);
+                
+        //     }
+        // }
+        // say = mouse.sayHi.bind(mouse);
+        // say();
+    //    var btn = document.getElementById('smart');
+
+    //     btn.addEventListener('click',mouse.sayHi.bind(mouse) );
+
+    // ***********arrow function 
+    // var a = {
+    //     name: 'Mickeys',
+    //     run: function () {
+    //         var run2= () => {
+    //             console.log(this.name);               
+    //         };
+    //         run2();
+    //     }
+    // };
+    // a.run();
+
+    // vd
+    // a = {
+    //     foo: 'bar',
+    //     run: function() {
+    //         setTimeout( () => {
+    //             console.log(this.foo);
+                
+    //         }, 2000
+
+    //         );
+    //     }
+        
+    // }; a.run();
+
+
+    //********** template string
+    //     hello = (name) => {
+    //         return `hi ${name}!
+    //         ${20+2} tuoi`;
+    //     }
+    //    console.log( hello('Nga'));
+
+
+    //*****array likes and arguments
+    // const obj = {
+    //     0: 'Nga',
+    //     1: 'Thuy',
+    //     2: 'Hoang',
+    //     3: 'Nam',
+    //     length: 4
+    // };
+    // for(i=0;i<obj.length;i++) {
+    //     console.log(obj[i]);       
+    // }
+
+// function sum() {
+//     const numbers = Array.from(arguments);
+//     return numbers.reduce(function(sum, num) {
+//         return sum+num;
+//     },0)
+// }
+// console.log(sum(1,5,4,7,3,5));
+
+
+// ***defaul parameters
+    // function sayHi( name = 'Nga', laguages='ja'){
+    //     if(laguages === 'ja') {
+    //         return `konnichiwa, ${name}`
+    //     }
+    //     if(laguages === 'en') {
+    //         return `hi, ${name}`
+    //     } else
+    //     return `xin chao`;
+    // }
+    // console.log(sayHi());
+    
+    
+        // **********apply
+        // function sum() {
+        //     const numbers = Array.from(arguments);
+        //     return numbers.reduce((sum, num) => sum + num, 0);
+        // }
+        // function average() {
+        //     const x = sum.apply(null, arguments);
+        //     return x/arguments.length;
+        // }
+        // console.log(average(1,2,3,2));
+
+
+        // ********class
+        // class Name {
+        //     constructor(name, age) {
+        //         this.name = name;
+        //         this.age = age;
+        //     }
+        //     load() {
+        //         console.log(`I am ${this.name}, ${this.age}`);
+        //     }
+        // }
+        // person = new Name('Thuy', 22);
+        // person.load();
+        
+
+        // ****** class inheritance
+        // class Animal {
+        //     constructor(name) {
+        //         this.name = name;
+        //     }
+        //     eat() {
+        //         console.log(`eat......`);
+                
+        //     }
+        // }
+        // class Bird extends Animal {
+        //     fly() {
+        //         console.log(`${this.name} fly......`);
+        //     }
+        // }
+        // bird = new Bird('Dai bang');
+        // console.log(bird.fly());
+        
+        // function Animal(name) {
+        //     this.name = name;
+        // }
+        // Animal.prototype.eat = function() {
+        //     console.log(`Eat.........`);
+        // }
+        // function Bird(name) {
+        //     Animal.apply(this, arguments);
+        // }
+        
+        // Bird.prototype = new Animal();
+        // var bird = new Bird('fg');
+        // console.log(bird);
+        // bird.eat();
+        
+     
+    
+    </script>
+</body>
+</html>
